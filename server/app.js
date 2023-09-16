@@ -19,7 +19,7 @@ app.get('/api/switch-usage', (req, res) => {
 });
 
 app.get('/api/track-usage', (req, res) => {
-  db.all('SELECT track_id, SUM(usage_count) as total_usage FROM track_usage_data GROUP BY track_id', (err, rows) => {
+  db.all('SELECT track_id, COUNT(*) as total_usage FROM track_usage_data GROUP BY track_id', (err, rows) => {
     if (err) {
       res.status(500).json({ error: err.message });
       return;

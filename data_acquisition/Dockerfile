@@ -14,4 +14,4 @@ RUN pip3 install requests \
                  websocket-client
 WORKDIR /home/data_acquisition
 
-CMD [ "python3", "/home/data_acquisition/counting_changes.py" ]
+# CMD [ "python3", "/home/data_acquisition/counting_changes.py" ]

@@ -2,7 +2,7 @@ import { useTheme } from '@mui/system';
 import React, { useState, useEffect } from 'react';
 import ReactEcharts from 'echarts-for-react';
 
-const DoughnutChart = ({ height, color = [] }) => {
+const DoughnutChartSwitch = ({ height, color = [] }) => {
   const theme = useTheme();
 
   const [switchUsageData, setSwitchUsageData] = useState([]);
@@ -114,4 +114,4 @@ const DoughnutChart = ({ height, color = [] }) => {
   );
 };
 
-export default DoughnutChart;
+export default DoughnutChartSwitch;

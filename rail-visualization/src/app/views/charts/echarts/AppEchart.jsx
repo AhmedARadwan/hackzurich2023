@@ -1,6 +1,7 @@
 import { Box, styled, useTheme } from '@mui/material';
 import SimpleCard from 'app/components/SimpleCard';
-import DoughnutChart from './Doughnut';
+import DoughnutChartSwitch from './DoughnutSwitch';
+import DoughnutChartTrack from './DoughnutTrack';
 import LineChart from './LineChart';
 
 const Container = styled('div')(({ theme }) => ({
@@ -33,7 +34,7 @@ const AppEchart = () => {
       <Box sx={{ py: '12px' }} />
 
       <SimpleCard title="Switches Usage">
-        <DoughnutChart
+        <DoughnutChartSwitch
           height="500px"
           color={[
             theme.palette.primary.dark,
@@ -44,6 +45,19 @@ const AppEchart = () => {
       </SimpleCard>
 
       <Box sx={{ py: '12px' }} />
+
+
+      {/* <SimpleCard title="track Usage">
+        <DoughnutChartTrack
+          height="500px"
+          color={[
+            theme.palette.primary.dark,
+            theme.palette.primary.main,
+            theme.palette.primary.light,
+          ]}
+        />
+      </SimpleCard> */}
+      
 
       {/* <SimpleCard title="Comparison Chart">
         <ComparisonChart

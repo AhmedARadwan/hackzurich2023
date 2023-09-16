@@ -1,0 +1,18 @@
+/* Add this CSS to your project's styles */
+.maintenance-needed {
+    animation: blink 1s infinite alternate;
+    background-color: red;
+    color: white;
+  }
+  
+  @keyframes blink {
+    0% {
+      background-color: red;
+      color: white;
+    }
+    100% {
+      background-color: transparent;
+      color: inherit;
+    }
+  }
+  
