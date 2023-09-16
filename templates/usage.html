@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track and Switch Usage Data</title>
+    <!-- Include Plotly.js for rendering graphs -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Track and Switch Usage Data</h1>
+    
+    <!-- Display Track Usage Graph -->
+    <div id="track_usage">{{ track_fig|safe }}</div>
+    
+    <!-- Display Switch Count Graph -->
+    <div id="switch_count">{{ switch_fig|safe }}</div>
+</body>
+</html>

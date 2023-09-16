@@ -1,0 +1,146 @@
+{
+  "sentAt": "2023-07-11T10:45:33.918Z",
+  "state": {
+    "global": {
+      "iltisConnectionAlive": true,
+      "localOperation": true,
+      "valid": true
+    },
+    "elements": {
+      "tracks": [
+        {
+          "id": "GLIS_track_GR7.2",
+          "station": "GLIS",
+          "type": "track",
+          "name": "GR7.2",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "drivable": true
+        },
+        {
+          "id": "GLIS_track_GR6.2",
+          "station": "GLIS",
+          "type": "track",
+          "name": "GR6.2",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "drivable": true
+        }
+        
+      ],
+      "railSwitches": [
+        {
+          "id": "GLIS_railSwitch_206",
+          "station": "GLIS",
+          "type": "railSwitch",
+          "name": "206",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "position": "left",
+          "canTogglePosition": true,
+          "drivable": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_railSwitch_207",
+          "station": "GLIS",
+          "type": "railSwitch",
+          "name": "207",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "position": "right",
+          "canTogglePosition": true,
+          "drivable": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_railSwitch_2",
+          "station": "GLIS",
+          "type": "railSwitch",
+          "name": "2",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "position": "right",
+          "canTogglePosition": true,
+          "drivable": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_railSwitch_6",
+          "station": "GLIS",
+          "type": "railSwitch",
+          "name": "6",
+          "valid": true,
+          "activeRoute": false,
+          "occupied": false,
+          "impaired": false,
+          "position": "right",
+          "canTogglePosition": true,
+          "drivable": true,
+          "serviceMode": false
+        }
+      ],
+      "switchGroups": [
+        {
+          "id": "GLIS_switchGroup_WG1",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG1",
+          "valid": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_switchGroup_WG2",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG2",
+          "valid": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_switchGroup_WG3",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG3",
+          "valid": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_switchGroup_WG4",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG4",
+          "valid": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_switchGroup_WG5",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG5",
+          "valid": true,
+          "serviceMode": false
+        },
+        {
+          "id": "GLIS_switchGroup_WG6",
+          "station": "GLIS",
+          "type": "switchGroup",
+          "name": "WG6",
+          "valid": true,
+          "serviceMode": false
+        }
+      ]
+    },
+    "routes": []
+  }
+}
