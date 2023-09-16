@@ -1,0 +1,30 @@
+version: "2.3"
+services:
+  client:
+        build:
+            context: ./rail-visualization
+            dockerfile: Dockerfile
+        network_mode: host
+        environment:
+            - CANVAS_WIDTH=1114
+            - CANVAS_HEIGHT=396
+            - ICON_SIZE=40
+        depends_on:
+            - node-server
+        volumes:
+        - ./rail-visualization:/home/rail-visualization
+        - ./map:/home/map
+ 
+  
+  node-server:
+        build:
+            context: ./server
+        expose:
+            - 5500
+        ports:
+            - 5500:5500
+        network_mode: "host"
+        environment:
+            - PORT=5500
+        volumes:
+            - ./server:/home/server
