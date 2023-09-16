@@ -9,6 +9,7 @@ This repository is dedicated to the analysis and predictive maintenance of rail 
   - [Usage](#usage)
   - [Configuration](#configuration)
   - [Contributing](#contributing)
+  - [To-Do](#to-do)
   - [License](#license)
 
 ## Prerequisites
@@ -79,6 +80,11 @@ If you'd like to contribute to this project, please follow these steps:
 5. Open a pull request against the `main` branch of this repository.
 
 We welcome contributions and appreciate your help in improving this project.
+
+## To-Do
+
+- Add "Home" page that has a visualization of the usage of rail tracks.
+- Add tracks usage graphs.
 
 ## License
 
