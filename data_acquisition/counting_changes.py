@@ -14,7 +14,7 @@ track_usage = {}
 
 def get_database_connection():
     if not hasattr(local, "conn"):
-        local.conn = sqlite3.connect('server/rail_data.db')
+        local.conn = sqlite3.connect('/home/dbData/rail_data.db')
     return local.conn
 
 def get_database_cursor():
@@ -100,11 +100,11 @@ def depot_state_update(update):
 
         if previous_state != occupied and not previous_state and occupied:
             # Track state changed from false to true, increment usage count
-            track_usage[track_id] = 1
+            track_usage[track_id] = track_usage.get(track_id, 0) + 1
 
             # Insert the track usage data into the 'track_usage_data' database table
             cursor.execute('INSERT INTO track_usage_data (timestamp, track_id, usage_count) VALUES (?, ?, ?)',
-                           (timestamp, track_id, 1))
+                           (timestamp, track_id, track_usage[track_id]))
             get_database_connection().commit()
 
     # Print the most used track

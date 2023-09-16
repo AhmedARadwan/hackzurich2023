@@ -4,6 +4,11 @@ export const navigations = [
   {
     name: 'Charts',
     icon: 'trending_up',
-    children: [{ name: 'Echarts', path: '/charts/echarts', iconText: 'E' }],
+    path: '/charts',
+  },
+  {
+    name: 'Alerts',
+    icon: 'announcement',
+    path: '/alerts',
   },
 ];

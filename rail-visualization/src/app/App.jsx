@@ -7,6 +7,9 @@ import { SettingsProvider } from './contexts/SettingsContext';
 import { Store } from './redux/Store';
 import routes from './routes';
 
+// Import the Notification component
+import Notification from './notification/Notification';
+
 const App = () => {
   const content = useRoutes(routes);
 
@@ -14,7 +17,11 @@ const App = () => {
     <Provider store={Store}>
       <SettingsProvider>
         <MatxTheme>
-          <AuthProvider>{content}</AuthProvider>
+          <AuthProvider>
+            {content}
+            {/* Add the Notification component */}
+            <Notification />
+          </AuthProvider>
         </MatxTheme>
       </SettingsProvider>
     </Provider>

@@ -1,6 +1,17 @@
 version: "2.3"
 services:
-  client:
+# /home/data_acquisition
+    data_acquisition:
+        build:
+            context: ./data_acquisition
+            dockerfile: Dockerfile
+        network_mode: host
+        volumes:
+        - ./data_acquisition:/home/data_acquisition
+        - ./dbData:/home/dbData
+        tty: true
+        command: python3 /home/data_acquisition/counting_changes.py
+    client:
         build:
             context: ./rail-visualization
             dockerfile: Dockerfile
@@ -16,7 +27,7 @@ services:
         - ./map:/home/map
  
   
-  node-server:
+    node-server:
         build:
             context: ./server
         expose:
@@ -28,3 +39,13 @@ services:
             - PORT=5500
         volumes:
             - ./server:/home/server
+            - ./dbData:/home/dbData
+
+    database:
+        image: 'bitnami/mongodb'
+        volumes: 
+            - ./data:/data/db
+        ports:
+            - "27020:27017"
+        tty: true
+        restart: always

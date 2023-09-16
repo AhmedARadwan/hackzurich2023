@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('/home/server/rail_data.db');
+const db = new sqlite3.Database('/home/dbData/rail_data.db');
 
 app.use(cors());
 
